@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
           event_category: "outbound",
           event_label: buttonLocation,
           outbound_url: PRODUCT_PURCHASE_URL,
-          value: 14.99
+          value: 20.00
         });
       }
 
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
         fbq("track", "InitiateCheckout", {
           content_name: "Salicylic Acid + B5 Duo Care Set",
           content_category: "Skincare",
-          value: 14.99,
+          value: 20.00,
           currency: "USD"
         });
       }
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (typeof ttq !== "undefined" && typeof ttq.track === "function") {
         ttq.track("InitiateCheckout", {
           content_name: "Salicylic Acid + B5 Duo Care Set",
-          value: 14.99,
+          value: 20.00,
           currency: "USD"
         });
       }
