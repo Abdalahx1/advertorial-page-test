@@ -59,6 +59,14 @@ document.addEventListener("DOMContentLoaded", () => {
       if (typeof clarity === "function") {
         clarity("event", "outbound_click");
       }
+
+      // 5. Vercel Web Analytics Custom Event
+      if (typeof window.va === "function") {
+        window.va("event", {
+          name: "outbound_click",
+          data: { location: buttonLocation }
+        });
+      }
     });
   });
 
